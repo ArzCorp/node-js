@@ -1,4 +1,3 @@
-const StringUtils = require('./stringUtils')
-const { API_URL } = require('./keys')
+const user = require('./src/module.js')
 
-console.log('Hello World! ' + API_URL)
+console.log(user.name)
