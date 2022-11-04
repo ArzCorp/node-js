@@ -1,0 +1,26 @@
+{
+  "name": "node-js",
+  "version": "1.0.0",
+  "description": "this is a project to practice topics about node js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArzCorp/node-js.git"
+  },
+  "keywords": [
+    "node-js",
+    "course",
+    "youtube",
+    "fazt",
+    "practice"
+  ],
+  "author": "ArzCorp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArzCorp/node-js/issues"
+  },
+  "homepage": "https://github.com/ArzCorp/node-js#readme"
+}
