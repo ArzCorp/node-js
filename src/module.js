@@ -1,3 +1,4 @@
-module.exports = {
-	name: 'Osvaldo',
+export const user = {
+	name: 'John',
+	lastName: 'Arzate',
 }

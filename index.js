@@ -1,3 +1,3 @@
-const user = require('./src/module.js')
+import { user } from './src/module.js'
 
-console.log(user.name)
+console.log(user.lastName)
