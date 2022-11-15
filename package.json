@@ -1,30 +1,28 @@
 {
 	"name": "node-js",
-	"version": "0.0.1",
-	"description": "project to practice node js",
+	"version": "1.0.0",
+	"description": "this is a project to practice topics about node js",
 	"main": "index.js",
 	"scripts": {
-		"dev": "nodemon index.js",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "npx nodemon index.js"
 	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/ArzCorp/node-js.git"
 	},
+	"type": "module",
 	"keywords": [
-		"node",
-		"js",
+		"node-js",
 		"course",
-		"practice",
-		"fatz"
+		"youtube",
+		"fazt",
+		"practice"
 	],
 	"author": "ArzCorp",
 	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/ArzCorp/node-js/issues"
 	},
-	"homepage": "https://github.com/ArzCorp/node-js#readme",
-	"devDependencies": {
-		"nodemon": "2.0.20"
-	}
+	"homepage": "https://github.com/ArzCorp/node-js#readme"
 }
