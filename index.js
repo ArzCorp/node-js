@@ -3,8 +3,12 @@ const { PORT } = require('./src/constants.js')
 const http = require('http')
 
 const server = http.createServer((req, res) => {
-	console.log(req)
-	res.end('Welcome (o _ o)/')
+	if (req.url === '/') {
+		if (req.method === 'GET') return res.end('Homw Page')
+		return res.end('Method not allowed')
+	}
+
+	return res.end('404 not found')
 })
 
 server.listen(PORT)

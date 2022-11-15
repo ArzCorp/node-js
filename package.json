@@ -5,13 +5,12 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "npx nodemon index.js"
+		"dev": "npx nodemon index.js"
 	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/ArzCorp/node-js.git"
 	},
-	"type": "module",
 	"keywords": [
 		"node-js",
 		"course",
