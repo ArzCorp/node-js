@@ -1,8 +1,8 @@
-const fs = require('fs')
+import { writeFileSync, readFileSync } from 'fs'
 
-fs.writeFileSync('./src/static/text.txt', ' Hello World', {
+writeFileSync('./src/static/text.txt', ' Hello World', {
 	flag: 'a',
 })
 
-const fileContent = fs.readFileSync('./src/static/text.txt', 'utf8')
+const fileContent = readFileSync('./src/static/text.txt', 'utf8')
 console.log(fileContent)
