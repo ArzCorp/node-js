@@ -1,6 +1,6 @@
-const { PORT } = require('./src/constants.js')
-
-const http = require('http')
+import { PORT } from './constants.js'
+import http from 'http'
+import { readFileSync } from 'fs'
 
 const server = http.createServer((req, res) => {
 	if (req.url === '/') {
@@ -8,7 +8,12 @@ const server = http.createServer((req, res) => {
 		return res.end('Method not allowed')
 	}
 
-	return res.end('404 not found')
+	if (req.url === '/json') {
+		const jsonFile = readFileSync('./test.json')
+		return res.end(jsonFile)
+	}
+	const html = readFileSync('./src/static/404.html')
+	return res.end(html)
 })
 
 server.listen(PORT)
