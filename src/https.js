@@ -12,6 +12,8 @@ const server = http.createServer((req, res) => {
 		const jsonFile = readFileSync('./test.json')
 		return res.end(jsonFile)
 	}
+
+	res.statusCode = 404
 	const html = readFileSync('./src/static/404.html')
 	return res.end(html)
 })
